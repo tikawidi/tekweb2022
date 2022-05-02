@@ -1,0 +1,47 @@
+<!--Header-->
+<div class="cover" style="background-image: url(./images/thom-milkovic-qGQIOLke2kE-unsplash.jpg);">
+    <div class="masking"></div>
+    <small class="credit"><a href="">Background photo by Thom Milkovic</a></small>
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-6 text-white">
+          <h1>Farid Surya</h1>
+          <p>Sebuah perjalanan ilmu menjelajah kode. Disini saya berbagi tentang perjalanan saya menjelajah berbagai bahasa kode komputer. </p>
+          <div class="social">
+            <a href=""><i class="bi-instagram"></i> fareedsurya</a>
+            <a href=""><i class="bi-github"></i> faridsurya</a>
+            <a href=""><i class="bi-youtube"></i> Farid Surya</a>
+          </div>
+        </div>
+        <div class="col-6 align-self-end text-center">
+          <img src="./images/farid_1_remove_bg.png" width="300px">
+        </div>
+      </div>
+    </div>   
+  </div>
+  <!--end header-->
+  /*style.css*/
+  .cover {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+  }
+  .cover .masking {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 0;
+  }
+  .cover .credit {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+  }
+  .cover .social a {
+    color: white;
+  }
+  
