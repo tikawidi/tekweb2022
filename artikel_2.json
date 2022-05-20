@@ -1,8 +1,10 @@
 {
 		"title":"CERITA TENTANGKU",
+		"judul":"Arunika",
 		"description": 
 		    "Setiap peristiwa pasti memerlukan pengorbanan",
 		"thumbnail":"Sedikit Goresan kecil yang dapat dibaca",
+	        "story":"Saya pernah membuat web kecil-kecilan saat menempuh perkuliahan semester 3",
 		"author": "Widi Pinastika Istirofah",
 		"published_at": "",
 		"content":"article_2.md"
