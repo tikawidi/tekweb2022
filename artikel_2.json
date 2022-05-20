@@ -1,10 +1,9 @@
-[
-	{
-		"title":" CERITA TENTANGKU",
-		"description": "'Setiap peristiwa pasti memerlukan pengorbanan'",
-		"thumbnail": "foto 5.jpeg",
+{
+		"title":"CERITA TENTANGKU",
+		"description": 
+		    "Setiap peristiwa pasti memerlukan pengorbanan",
+		"thumbnail": "Sedikit ketikan kecil yang mungkin dapat dibaca",
 		"author": "Widi Pinastika Istirofah",
 		"published_at": "",
 		"content":"article_2.md"
-	}
-]
+}
