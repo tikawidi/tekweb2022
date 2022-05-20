@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+ 
+    <link rel="stylesheet" href="./style2.css">
+    
+    
+  </head>
+  <body >
+    <div id="app">
+    <!--Header-->
+    <header>
+      <h1>{{header.author}}</h1>            
+      <h3>{{header.description}}</h3>
+    </header>
+    <div class="grid-container">
+      <div class="grid-item">
+      <img src="html_markdown/APB.jpg" alt="Avatar" style="width:100%">
+      <h4>{{header.title}}</h4> 
+            <p>{{header.description}}</p>
+            <a href="html_markdown/index.html" class="btn">Read More</a>
+      </div>
+      <div class="grid-item">
+      <img src="html_markdown/nilukopi.jpg" alt="Avatar" style="width:100%">
+      <h4><b>{{articles.title}}</b></h4> 
+            <p>{{articles.description}}</p>
+            <a href="html_markdown/index3.html" class="btn">Read More</a>
+      </div>
+     
+    </div>
+    </div>     
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.2.js"></script>
+    </div></br>
+    
+    
+  </body>
+</html>

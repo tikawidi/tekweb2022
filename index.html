@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="app">
+        <header>
+            <a href="#" class="judul">TEKWEB</a>
+            <ul>
+                <li><a href="halaman_2/portofolio.html">Portofolio</a></li>
+                <li><a href="halaman_2/index1.html">APB</a></li>
+                <li><a href="halaman_2/indexTulisan.html">Tulisan</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="bintang.png" id="star">
+            <img src="kucing.png" id="cat">
+            <img src="star.png" id="nur">
+            <h1 id="text">Widi Pinastika</h1>
+            <h1 id="text1"> Istirofah</h1>
+        </section>
+        <div class="sec" id="sec">
+            <h2>{{header.title}}</h2>            
+            <p>{{header.description}}</p>
+            <p>{{header.social.ig.description}} : {{header.social.ig.title}} </p>
+            <p>{{header.social.yt.description}} : {{header.social.yt.title}} </p>
+        </div>
+        <script>
+            let star= document.getElementById('star');
+            let cat= document.getElementById('cat');
+            let nur= document.getElementById('nur');
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                star.style.left= value * 0.25 + 'px';
+                cat.style.left=value*4.7+'px';
+                nur.style.bottom=value*0.5+'px';
+                text.style.marginTop=value*0.6+'px';
+                text1.style.marginTop=value*0.8+'px';
+
+            })
+
+        </script>
+        </div>
+    </body>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+</html>
