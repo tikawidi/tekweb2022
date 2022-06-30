@@ -1,6 +1,6 @@
 **API POINT**
 **USER**
-...
+```
 
 GET: /users/[id]
 
@@ -26,3 +26,4 @@ data:
   "github_url"  : "",
   "ig_url"      : "",
  }
+```
