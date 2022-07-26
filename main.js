@@ -1,3 +1,5 @@
+let apiUrl = "https://tugas.widipinastikaistirofah.my.id/index.php/";
+
 Vue.createApp({
     data() {
       return {
@@ -10,9 +12,7 @@ Vue.createApp({
         getHeaderData()
         {
           axios
-            .get(
-              "https://raw.githubusercontent.com/tikawidi/coba2/uts1/artikel_hime.json"
-            )
+            .get(apiUrl+"Users/getUsersById/0")
             .then((res) => {              
               this.header = res.data;
               this.getArticles();
