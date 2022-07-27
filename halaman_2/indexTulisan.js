@@ -8,18 +8,6 @@ Vue.createApp({
     };
   },
   methods:{    
-    getAwal()
-    {
-      axios
-        .get(apiUrl+"Artikel/getArtikelById/2")
-        .then((res) => {              
-          this.awal = res.data;
-          this.getArticles();
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    },
       getHeaderData()
       {
         axios
