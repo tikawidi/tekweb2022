@@ -13,7 +13,7 @@ Vue.createApp({
       axios
         .get(apiUrl+"Artikel/getArtikelById/2")
         .then((res) => {              
-          this.Awal = res.data;
+          this.awal = res.data;
           this.getArticles();
         })
         .catch((error) => {
