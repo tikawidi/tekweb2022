@@ -1,3 +1,5 @@
+let apiUrl = "https://tugas.widipinastikaistirofah.my.id/index.php/";
+
 Vue.createApp({
   data() {
     return {
@@ -10,9 +12,7 @@ Vue.createApp({
       getHeaderData()
       {
         axios
-          .get(
-            "https://raw.githubusercontent.com/tikawidi/tekweb2022/articleuts/artikel_1.json"
-          )
+          .get(apiUrl+"Artikel/getArtikelById/1")
           .then((res) => {              
             this.header = res.data;
             this.getArticles();
@@ -24,9 +24,7 @@ Vue.createApp({
       getArticles()
       {
           axios
-          .get(
-            "https://raw.githubusercontent.com/tikawidi/tekweb2022/articleuts/artikel_3.json"
-          )
+          .get(apiUrl+"Artikel/getArtikelById/1")
           .then((res) => {              
             this.articles = res.data;
           })
