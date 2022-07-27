@@ -137,4 +137,26 @@ section img#apb
     font-size: 3vvw;
     color: white;
 }
-
+.Users h2
+{
+    font-size: 3vvw;
+    margin-bottom: 10px;
+    color: white;
+}
+.Users h1
+{
+    font-size: 5vvw;
+    margin-bottom: 10px;
+    color: white;
+}
+.Users p
+{
+    font-size: 3vvw;
+    color: white;
+}
+.Users
+{
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(rgb(12, 2, 36),rgb(62, 24, 126));
+}
