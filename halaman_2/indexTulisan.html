@@ -10,23 +10,30 @@
     <div id="app">
     <!--Header-->
     <header>
+      <div class="Artikel" id="2">
       <h1>{{header.author}}</h1>            
-      <h3>{{header.thumbnail}}</h3>
+      <h3>{{header.description}}</h3>
+    </div>
     </header>
     <div class="grid-container">
       <div class="grid-item">
       <img src="html_markdown/foto 5.jpeg" alt="Avatar" style="width:100%">
+
+      <div class="Artikel" id="7">
       <h4>{{header.title}}</h4> 
             <p>{{header.description}}</p>
             <a href="html_markdown/index2.html" class="btn">Read More</a>
-      </div>
+      </div>    
+          </div>
       <div class="grid-item">
       <img src="html_markdown/IMM.jpg" alt="Avatar" style="width:100%">
+      <div class="Artikel" id="8">
       <h4><b>{{articles.title}}</b></h4> 
             <p>{{articles.description}}</p>
             <a href="html_markdown/index4.html" class="btn">Read More</a>
       </div>
-     
+      </div>
+
     </div>
     </div>     
     <script src="https://unpkg.com/vue@3"></script>
