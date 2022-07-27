@@ -11,7 +11,7 @@ Vue.createApp({
     getAwal()
     {
       axios
-        .get(apiUrl+"Artikel/getArtikelById/7")
+        .get(apiUrl+"Artikel/getArtikelById/2")
         .then((res) => {              
           this.Awal = res.data;
           this.getArticles();
