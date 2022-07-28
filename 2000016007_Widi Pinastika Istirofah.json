@@ -1,0 +1,585 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "898439f2-e020-4b04-a541-c33f2eaa69a3",
+        "name": "2000016007_Widi Pinastika Istirofah"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Service",
+            "id": "202db66a-b2d7-474e-9f74-4e56ca6a4cda",
+            "name": "Artikel"
+          },
+          "children": [
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n\"title\": \"GERAKAN PENDIDIKAN DENGAN MEMEGANG TEGUH TIGA KOMPETENSI DASAR IKATAN MAHASISWA MUHAMMADIYAH\",\n\"description\": \"''Tri Kompetensi merupakan salah satu ideologi dari IMM''\",\n\"thumbnail\":\"https://github.com/tikawidi/tekweb2022/blob/UTS/Artikel/IMM.jpg\",\n\"author\": \"Widi Pinastika Istirofah\",\n\"content\": \"https://raw.githubusercontent.com/tikawidi/tekweb2022/UTS/Artikel/article_1.md\"\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "tugas.widipinastikaistirofah.my.id",
+                  "path": "/index.php/Artikel/createArtikel"
+                },
+                "id": "0f02fd78-488a-43b5-8fb3-a7a54a15a042",
+                "name": "createArtikel",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+                  "name": "DELETE"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "tugas.widipinastikaistirofah.my.id",
+                  "path": "/index.php/Artikel/deleteArtikel/5"
+                },
+                "id": "9e59ea0e-280d-4c67-8a17-875d56e95cf4",
+                "name": "deleteArtikel",
+                "headers": []
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                  "name": "GET"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "tugas.widipinastikaistirofah.my.id",
+                  "path": "/index.php/Artikel/getAllArtikel"
+                },
+                "id": "d394ce10-162e-4f95-a5ab-e23612f3299d",
+                "name": "getAllArtikel",
+                "headers": []
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                  "name": "GET"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "\"id\": \"1\",\n\"title\": \"Diagram AS-IS\",\n\"description\": \"Untuk mempermudah dalam menjalankan suatu bisnis maka kita harus membuat sebuah diagram\",\n\"thumbnail\": \"https://github.com/tikawidi/tekweb2022/blob/UTS/APB.jpg\",\n\"author\": \"Widi Pinastika Istirofah\",\n\"content\": \"https://raw.githubusercontent.com/tikawidi/tekweb2022/UTS/Artikel/article_1.md\"\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "tugas.widipinastikaistirofah.my.id",
+                  "path": "/index.php/Artikel/getArtikelById/1"
+                },
+                "id": "dbf29e3d-0dcc-4c73-a9b1-0029d33dccc5",
+                "name": "getArtikelById",
+                "headers": []
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+                  "name": "PUT"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n\"id\": \"7\",\n\"title\": \"CERITA TENTANGKU\",\n\"description\": \"'Setiap peristiwa pasti memerlukan pengorbanan'\",\n\"thumbnail\": \"Jangan takut gagal. Ini bukan akhir dunia, dan dalam banyak hal, ini adalah langkah pertama untuk mempelajari sesuatu dan menjadi lebih baik.\",\n\"author\": \"Widi Pinastika Istirofah\",\n\"content\": \"https://raw.githubusercontent.com/tikawidi/tekweb2022/UTS/Artikel/article_1.md\"\n}\n"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "tugas.widipinastikaistirofah.my.id",
+                  "path": "/index.php/Artikel/updateArtikel"
+                },
+                "id": "a3852f5f-80f5-4794-9693-c33e1739bfda",
+                "name": "updateArtikel",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "entity": {
+            "type": "Service",
+            "id": "f1804318-cf72-418e-bd9e-da69672606a5",
+            "name": "Prototype"
+          },
+          "children": [
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n  \"name\" : \"Widi Pinastika\",\n  \"description\" : \"Tugas Akhir Tekweb semester 1\"\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "tugas.widipinastikaistirofah.my.id",
+                  "path": "/index.php/Prototype/createProto"
+                },
+                "id": "9241b654-8813-40c0-a7fd-76b92991f054",
+                "name": "createProto",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+                  "name": "DELETE"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "tugas.widipinastikaistirofah.my.id",
+                  "path": "/index.php/Prototype/deleteProto/1"
+                },
+                "id": "50b2f329-9f84-4b6c-8c0b-334a4e011f76",
+                "name": "deleteProto",
+                "headers": []
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                  "name": "GET"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "tugas.widipinastikaistirofah.my.id",
+                  "path": "/index.php/Prototype/getAllProto"
+                },
+                "id": "26e61783-b507-47d8-b4e7-7cb17257febc",
+                "name": "getAllproto",
+                "headers": []
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                  "name": "GET"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "tugas.widipinastikaistirofah.my.id",
+                  "path": "/index.php/Prototype/getProtoById/2"
+                },
+                "id": "b4d3f14d-23f9-48c3-b41b-9d7215de72ce",
+                "name": "getProtoByID",
+                "headers": []
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+                  "name": "PUT"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n  \"name\" : \"Widi Pinastika\",\n  \"description\" : \"Tugas Akhir Tekweb semester 3\"\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "tugas.widipinastikaistirofah.my.id",
+                  "path": "/index.php/Prototype/updateProto"
+                },
+                "id": "4402ce92-cde1-4e42-8d30-68ee1ce508d3",
+                "name": "updateProto",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "entity": {
+            "type": "Service",
+            "id": "afc08600-f3b4-4f5c-8fb4-bb1adf7293d8",
+            "name": "Users"
+          },
+          "children": [
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n\"title\": \"Widi Pinastika Istirofah/A\",\n\"description\": \"hidup memang susah kalo gak mau susah gak usah hidup\",\n\"ig\": \"https://www.instagram.com/zeal_ux\",\n\"yt\": \"https://www.youtube.com/channel/UCF3NGScfNNci9A4JSVsIHYw\",\n\"imageProfile\": \"https://tse3.mm.bing.net/th?id=OIP.hYLk2-6qi3tEK0RXsi8mOwHaEK&pid=Api&P=0\"\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "tugas.widipinastikaistirofah.my.id",
+                  "path": "/index.php/Users/createUsers"
+                },
+                "id": "27bbfcac-4e32-4198-9e5b-e8cdf335d4ae",
+                "name": "createUsers",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+                  "name": "DELETE"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "tugas.widipinastikaistirofah.my.id",
+                  "path": "/index.php/Users/deleteUsers/10"
+                },
+                "id": "60467ccd-b0bd-4d5a-a688-5ef3e8147ac9",
+                "name": "deleteUsers",
+                "headers": []
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                  "name": "GET"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "tugas.widipinastikaistirofah.my.id",
+                  "path": "/index.php/Users/getAllUsers"
+                },
+                "id": "8d1cf88d-a8ef-422c-a277-3668e53ee5e7",
+                "name": "getAllUsers",
+                "headers": []
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                  "name": "GET"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "tugas.widipinastikaistirofah.my.id",
+                  "path": "/index.php/Users/getUsersById/3"
+                },
+                "id": "3345da4d-34da-463a-8a1a-b28bc5db3b51",
+                "name": "getUsersById",
+                "headers": []
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+                  "name": "PUT"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n\"id\" : \"10\"\n\"title\": \"Widi Pinastika Istirofah/kelas\",\n\"description\": \"hidup memang susah kalo gak mau susah gak usah hidup\",\n\"ig\": \"https://www.instagram.com/zeal_ux\",\n\"yt\": \"https://www.youtube.com/channel/UCF3NGScfNNci9A4JSVsIHYw\",\n\"imageProfile\": \"https://tse3.mm.bing.net/th?id=OIP.hYLk2-6qi3tEK0RXsi8mOwHaEK&pid=Api&P=0\"\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "tugas.widipinastikaistirofah.my.id",
+                  "path": "/index.php/Users/updateUsers"
+                },
+                "id": "1d65bc54-bd8e-4ad0-8c7f-aad2944400c4",
+                "name": "updateUsers",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
