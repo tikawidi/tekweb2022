@@ -37,7 +37,7 @@ Vue.createApp({
           .get(apiUrl+"Prototype/getProtoById/2")
           .then((res) => {              
             this.proto = res.data;
-            this.getArticles();
+            
           })
           .catch((error) => {
             console.log(error);
