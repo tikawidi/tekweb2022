@@ -30,18 +30,6 @@ Vue.createApp({
           .catch((error) => {
             console.log(error);
           });
-      },
-      getProtoData()
-      {
-        axios
-          .get(apiUrl+"Prototype/getProtoById/2")
-          .then((res) => {              
-            this.proto = res.data;
-            
-          })
-          .catch((error) => {
-            console.log(error);
-          });
       }
   },
   beforeMount() {
